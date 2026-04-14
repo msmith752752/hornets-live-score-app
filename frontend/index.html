@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hornets Live Score</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #1d1160;
+      color: white;
+    }
+    #score {
+      font-size: 48px;
+      margin-top: 20px;
+    }
+    #status {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Charlotte Hornets Live Score</h1>
+  <div id="score">Loading...</div>
+  <div id="status"></div>
+
+  <script>
+    async function getScore() {
+      const res = await fetch("https://jaxz3rfyf2.execute-api.us-east-1.amazonaws.com/test/score");
+      const data = await res.json();
+
+      document.getElementById("score").innerText =
+        `${data.home} - ${data.away}`;
+
+      document.getElementById("status").innerText =
+        data.status;
+    }
+
+    setInterval(getScore, 30000);
+    getScore();
+  </script>
+
+</body>
+</html>
