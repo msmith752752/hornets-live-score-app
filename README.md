@@ -1,20 +1,20 @@
 # hornets-live-score-app
 A live sports web app running on AWS serverless architecture
-# 🏀 Hornets Live Score App
+# Hornets Live Score App
 
 A real-time sports dashboard built with AWS serverless architecture.
 
-## 🚀 Live Demo
+## Live Demo
 Frontend hosted on AWS S3:
 http://hornets-score-app-041426.s3-website-us-east-1.amazonaws.com/
 
-## 🧠 What it does
+## What it does
 - Tracks live NBA game data
 - Displays real-time score updates
 - Updates automatically every 30 seconds
 - Focused on the Charlotte Hornets
 
-## 🏗️ Architecture
+## Architecture
 
 - AWS Lambda (Python backend)
 - API Gateway (REST API)
