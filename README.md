@@ -6,7 +6,7 @@ A real-time sports dashboard built with AWS serverless architecture.
 
 ## 🚀 Live Demo
 Frontend hosted on AWS S3:
-(put your S3 website link here)
+http://hornets-score-app-041426.s3-website-us-east-1.amazonaws.com/
 
 ## 🧠 What it does
 - Tracks live NBA game data
@@ -21,7 +21,7 @@ Frontend hosted on AWS S3:
 - S3 Static Website Hosting (frontend)
 - External NBA live data source
 
-## 📊 Example API Response
+## Example API Response
 ```json
 {
   "home": 102,
